@@ -39,20 +39,21 @@ MariaDB是MySQL的一个分支，主要由开源社区维护。
 
 ## 下载安装
 
-```
+```shell
+# 安装mysql服务
 sudo yum install mysql-community-server
+# 修改源的配置
 cd /etc/yum.repos.d
 vi mysql-community.repo
+# 将[mysql80-community]下gpgcheck=1 -> gpgcheck=0
 ```
 
-将[mysql80-community]下gpgcheck=1 -> gpgcheck=0
-
-```
+```shell
 sudo yum install -y https://repo.mysql.com//mysql80-community-release-el7-3.noarch.rpm
 sudo yum install mysql-community-server
 ```
 
-```
+```shell
 # 使用以下命令启动MySQL服务器：
 systemctl start mysqld
 # 检查MySQL服务器的状态：
@@ -61,7 +62,7 @@ systemctl status mysqld
 
 ## 初始化
 
-```
+```shell
 # 查看密码
 sudo grep 'temporary password' /var/log/mysqld.log
 # 执行下面命令登录 输入上一步骤输出的密码
@@ -72,7 +73,7 @@ mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'YourNewPassword';
 exit;
 ```
 
-```
+```shell
 #以root用户登录到服务器，输入新密码：
 mysql -u root -p
 Enter password: (enter root password here)
