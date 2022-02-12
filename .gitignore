@@ -13,3 +13,4 @@ about.md
 _config.yml
 .travis.yml
 .commitlintrc.js
+.idea
