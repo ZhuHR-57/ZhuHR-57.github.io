@@ -1,5 +1,6 @@
 ---
 tags: 第五节 Golang之go 命令用法
+tags: go
 article_header:
   type: cover
   image:
