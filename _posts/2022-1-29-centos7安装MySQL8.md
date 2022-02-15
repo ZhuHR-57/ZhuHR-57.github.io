@@ -16,8 +16,6 @@ layout: article
 
 
 
-
-
 # 1. 卸载MariaDB 和 Mysql
 
 MariaDB是MySQL的一个分支，主要由开源社区维护。
